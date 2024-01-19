@@ -61,7 +61,7 @@ public class GatewayController {
     }
 
 
-    /*成功*/
+    
     @GetMapping(value = "/cars", produces = "application/json")
     public ResponseEntity<PaginationResponse> getCars(@RequestParam(required = false, defaultValue = "0") int page,
                                                       @RequestParam(required = false, defaultValue = "5") int size) {
